@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Package, Instagram, Twitter, Facebook, Youtube, Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react';
+import { Package, Instagram, Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 export default function Footer() {
@@ -104,9 +104,6 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {[
                 { Icon: Instagram, href: '#', label: 'Instagram' },
-                { Icon: Facebook, href: '#', label: 'Facebook' },
-                { Icon: Twitter, href: '#', label: 'Twitter' },
-                { Icon: Youtube, href: '#', label: 'YouTube' },
               ].map(({ Icon, href, label }) => (
                 <a key={label} href={href} aria-label={label}
                   className="w-9 h-9 rounded-xl bg-gray-800 hover:bg-primary-500 flex items-center justify-center transition-all duration-200 hover:scale-110"
